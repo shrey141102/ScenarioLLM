@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<routes>
+  <vtype id="car" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="50.0" color="1,1,0"/>
+  <vehicle id="vehicle_1" type="car" depart="0.0" departPos="0" departSpeed="41.07">
+    <route edges="e1"/>
+    <stop lane="e1_0" endPos="366.37" duration="0" until="0.1"/>
+    <stop lane="e1_0" endPos="370.37" duration="0" until="0.2"/>
+    <stop lane="e1_0" endPos="374.27" duration="0" until="0.3"/>
+    <stop lane="e1_0" endPos="378.07" duration="0" until="0.4"/>
+    <stop lane="e1_0" endPos="381.77" duration="0" until="0.5"/>
+  </vehicle>
+  <vehicle id="vehicle_2" type="car" depart="0.0" departPos="0" departSpeed="25.0">
+    <route edges="e1"/>
+    <stop lane="e1_0" endPos="165.25" duration="0" until="0.1"/>
+    <stop lane="e1_0" endPos="167.65" duration="0" until="0.2"/>
+    <stop lane="e1_0" endPos="169.95" duration="0" until="0.3"/>
+    <stop lane="e1_0" endPos="172.15" duration="0" until="0.4"/>
+    <stop lane="e1_0" endPos="174.25" duration="0" until="0.5"/>
+  </vehicle>
+  <vehicle id="vehicle_3" type="car" depart="0.0" departPos="0" departSpeed="36.13">
+    <route edges="e1"/>
+    <stop lane="e1_0" endPos="185.69" duration="0" until="0.1"/>
+    <stop lane="e1_0" endPos="189.19" duration="0" until="0.2"/>
+    <stop lane="e1_0" endPos="192.59" duration="0" until="0.3"/>
+    <stop lane="e1_0" endPos="195.89" duration="0" until="0.4"/>
+    <stop lane="e1_0" endPos="199.09" duration="0" until="0.5"/>
+  </vehicle>
+  <vehicle id="vehicle_4" type="car" depart="0.0" departPos="0" departSpeed="42.76">
+    <route edges="e1"/>
+    <stop lane="e1_0" endPos="271.62" duration="0" until="0.1"/>
+    <stop lane="e1_0" endPos="275.8" duration="0" until="0.2"/>
+    <stop lane="e1_0" endPos="279.88" duration="0" until="0.3"/>
+    <stop lane="e1_0" endPos="283.86" duration="0" until="0.4"/>
+    <stop lane="e1_0" endPos="287.74" duration="0" until="0.5"/>
+  </vehicle>
+  <vehicle id="vehicle_5" type="car" depart="0.0" departPos="0" departSpeed="43.4">
+    <route edges="e1"/>
+    <stop lane="e1_0" endPos="313.74" duration="0" until="0.1"/>
+    <stop lane="e1_0" endPos="317.98" duration="0" until="0.2"/>
+    <stop lane="e1_0" endPos="322.12" duration="0" until="0.3"/>
+    <stop lane="e1_0" endPos="326.16" duration="0" until="0.4"/>
+    <stop lane="e1_0" endPos="330.1" duration="0" until="0.5"/>
+  </vehicle>
+</routes>

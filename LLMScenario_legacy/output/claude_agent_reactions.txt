@@ -1,0 +1,35 @@
+Event: A vehicle ahead suddenly brakes hard, reducing speed by 50% in 2 seconds.
+
+Agent 1 Reaction:
+```
+Vehicle ID: C1
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 200, 0, 20, 0
+0.2, 204, 0, 20, 0
+0.4, 208, 0, 20, 0
+0.6, 212, 0, 20, 0
+0.8, 216, 0, 20, 0
+1.0, 220, 0, 20, 0
+1.2, 223, 0, 15, 0
+1.4, 226, 0, 10, 0
+1.6, 228, 0, 10, 0
+1.8, 230, 0, 10, 0
+2.0, 232, 0, 10, 0
+2.2, 234, 0, 10, 0
+2.4, 236, 0, 10, 0
+2.6, 238, 0, 10, 0
+2.8, 240, 0, 10, 0
+3.0, 242, 0, 10, 0
+3.2, 244, 0, 10, 0
+3.4, 246, 0, 10, 0
+3.6, 248, 0, 10, 0
+3.8, 250, 0, 10, 0
+4.0, 252, 0, 10, 0
+4.2, 254, 0, 10, 0
+4.4, 256, 0, 10, 0
+4.6, 258, 0, 10, 0
+4.8, 260, 0, 10, 0
+5.0, 262, 0, 10, 0
+```
+In this scenario, I initially maintain my speed of 20 m/s, but as the vehicle ahead suddenly brakes, I begin to decelerate to ensure safety. I reduce my speed to 15 m/s by 1.2 seconds and further to 10 m/s by 1.4 seconds, maintaining this speed to keep a safe distance while monitoring the traffic situation. My trajectory reflects a cautious approach, prioritizing safety and maintaining control of the vehicle.
+

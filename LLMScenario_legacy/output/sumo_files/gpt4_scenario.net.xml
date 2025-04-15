@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<net xmlns="http://sumo.dlr.de/xsd/net_file.xsd" version="1.9" junctionCornerDetail="5" limitTurnSpeed="5.5">
+  <location netOffset="0.00,0.00" convBoundary="62.75,-40.61,481.77,71.68" origBoundary="62.75,-40.61,481.77,71.68" projParameter="!"/>
+  <edge id="e1" from="j1" to="j2" priority="1" numLanes="4" speed="50.00">
+    <lane index="0" speed="50.00" length="419.02" shape="62.75,-35.61 481.77,-35.61"/>
+    <lane index="1" speed="50.00" length="419.02" shape="62.75,-30.61 481.77,-30.61"/>
+    <lane index="2" speed="50.00" length="419.02" shape="62.75,-25.61 481.77,-25.61"/>
+    <lane index="3" speed="50.00" length="419.02" shape="62.75,-20.61 481.77,-20.61"/>
+  </edge>
+</net>

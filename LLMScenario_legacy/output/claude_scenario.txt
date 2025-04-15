@@ -1,0 +1,159 @@
+<scenario_description>
+This enhanced scenario takes place on a busy 4-lane highway during rush hour with moderate traffic density. The scenario features multiple challenging interactions including several lane changes, a sudden braking event, and a near-miss situation. The main challenge involves Vehicle 1 attempting to navigate through traffic while multiple vehicles perform lane changes around it. Vehicle 3 performs an aggressive cut-in maneuver in front of Vehicle 1, forcing it to brake suddenly. Meanwhile, Vehicle 6 (a new vehicle) enters from an on-ramp and needs to merge quickly, creating additional complexity. Vehicle 7 (another new vehicle) experiences a mechanical issue and slows down unexpectedly in the leftmost lane. This combination of events creates a challenging multi-agent interaction scenario that tests an autonomous vehicle's prediction, planning, and decision-making capabilities.
+</scenario_description>
+
+<enhancement_strategy>
+I've enhanced the scenario by:
+1. Adding two new vehicles (6 and 7) to increase traffic density and complexity
+2. Creating a critical cut-in maneuver by Vehicle 3 in front of Vehicle 1
+3. Introducing a sudden braking event that propagates through traffic
+4. Adding a merging situation with Vehicle 6 entering from an on-ramp
+5. Creating a vehicle with mechanical issues (Vehicle 7) that behaves unexpectedly
+6. Coordinating multiple lane changes happening in close proximity
+7. Designing near-miss situations that require precise trajectory planning
+8. Creating scenarios where the optimal path is temporarily blocked
+9. Ensuring vehicles maintain realistic physics and driving behaviors
+10. Introducing varying speeds and acceleration/deceleration patterns
+</enhancement_strategy>
+
+<vehicle_trajectories>
+Vehicle ID: 1 (Car - Ego vehicle in left lane)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 362.26, 21.68, 41.07, 0.0
+0.5, 382.80, 21.68, 41.07, 0.0
+1.0, 403.33, 21.68, 41.07, 0.0
+1.5, 423.87, 21.68, 41.07, 0.0
+2.0, 444.40, 21.68, 41.07, 0.0
+2.5, 464.94, 21.68, 41.07, 0.0
+3.0, 485.47, 21.68, 41.07, 0.0
+3.5, 506.01, 21.68, 41.07, 0.0
+4.0, 526.54, 21.68, 41.07, 0.0
+4.5, 547.08, 21.68, 41.07, 0.0
+5.0, 567.61, 21.68, 41.07, 0.0
+
+Vehicle ID: 2 (Car - Vehicle in right lane moving in opposite direction)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 162.75, 9.39, -32.48, 3.14
+0.5, 146.51, 9.39, -32.48, 3.14
+1.0, 130.27, 9.39, -32.48, 3.14
+1.5, 114.03, 9.39, -32.48, 3.14
+2.0, 97.79, 9.39, -32.48, 3.14
+2.5, 81.55, 9.39, -32.48, 3.14
+3.0, 65.31, 9.39, -32.48, 3.14
+3.5, 49.07, 9.39, -32.48, 3.14
+4.0, 32.83, 9.39, -32.48, 3.14
+4.5, 16.59, 9.39, -32.48, 3.14
+5.0, 0.35, 9.39, -32.48, 3.14
+
+Vehicle ID: 3 (Car - Aggressive cut-in vehicle)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 182.08, 21.64, 36.13, 0.0
+0.5, 200.15, 21.64, 36.13, 0.0
+1.0, 218.21, 21.64, 36.13, 0.0
+1.5, 236.28, 21.64, 36.13, 0.0
+2.0, 254.34, 21.64, 36.13, 0.0
+2.5, 272.41, 17.50, 36.13, 0.05
+3.0, 290.47, 13.81, 36.13, 0.0
+3.5, 308.54, 13.81, 36.13, 0.0
+4.0, 326.60, 13.81, 36.13, 0.0
+4.5, 344.67, 17.50, 36.13, -0.05
+5.0, 362.73, 21.64, 36.13, 0.0
+
+Vehicle ID: 4 (Car - Vehicle in middle lane moving in opposite direction)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 267.34, 13.12, -42.76, 3.14
+0.5, 245.96, 13.12, -42.76, 3.14
+1.0, 224.58, 13.12, -42.76, 3.14
+1.5, 203.20, 13.12, -42.76, 3.14
+2.0, 181.82, 13.12, -42.76, 3.14
+2.5, 160.44, 13.12, -42.76, 3.14
+3.0, 139.06, 13.12, -42.76, 3.14
+3.5, 117.68, 13.12, -42.76, 3.14
+4.0, 96.30, 13.12, -42.76, 3.14
+4.5, 74.92, 13.12, -42.76, 3.14
+5.0, 53.54, 13.12, -42.76, 3.14
+
+Vehicle ID: 5 (Car - Vehicle in middle lane moving in opposite direction)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 309.40, 13.81, -43.40, 3.14
+0.5, 287.70, 13.81, -43.40, 3.14
+1.0, 266.00, 13.81, -43.40, 3.14
+1.5, 244.30, 13.81, -43.40, 3.14
+2.0, 222.60, 13.81, -43.40, 3.14
+2.5, 200.90, 13.81, -43.40, 3.14
+3.0, 179.20, 13.81, -43.40, 3.14
+3.5, 157.50, 13.81, -43.40, 3.14
+4.0, 135.80, 13.81, -43.40, 3.14
+4.5, 114.10, 13.81, -43.40, 3.14
+5.0, 92.40, 13.81, -43.40, 3.14
+
+Vehicle ID: 6 (Car - Merging vehicle from on-ramp)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 350.00, 5.50, 35.00, 0.15
+0.5, 367.50, 6.80, 35.00, 0.12
+1.0, 385.00, 7.90, 35.00, 0.10
+1.5, 402.50, 8.80, 35.00, 0.08
+2.0, 420.00, 9.39, 35.00, 0.05
+2.5, 437.50, 9.39, 35.00, 0.0
+3.0, 455.00, 9.39, 35.00, 0.0
+3.5, 472.50, 9.39, 35.00, 0.0
+4.0, 490.00, 9.39, 35.00, 0.0
+4.5, 507.50, 9.39, 35.00, 0.0
+5.0, 525.00, 9.39, 35.00, 0.0
+
+Vehicle ID: 7 (Car - Vehicle with mechanical issues slowing down)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 400.00, 21.68, 38.00, 0.0
+0.5, 419.00, 21.68, 38.00, 0.0
+1.0, 438.00, 21.68, 38.00, 0.0
+1.5, 457.00, 21.68, 38.00, 0.0
+2.0, 475.00, 21.68, 36.00, 0.0
+2.5, 492.00, 21.68, 34.00, 0.0
+3.0, 508.00, 21.68, 32.00, 0.0
+3.5, 523.00, 21.68, 30.00, 0.0
+4.0, 537.00, 21.68, 28.00, 0.0
+4.5, 550.00, 21.68, 26.00, 0.0
+5.0, 562.00, 21.68, 24.00, 0.0
+
+Vehicle ID: 8 (Car - Lane-changing vehicle from right to middle)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 380.00, 9.39, 39.00, 0.0
+0.5, 399.50, 9.39, 39.00, 0.0
+1.0, 419.00, 9.39, 39.00, 0.0
+1.5, 438.50, 10.50, 39.00, 0.05
+2.0, 458.00, 11.80, 39.00, 0.05
+2.5, 477.50, 13.12, 39.00, 0.05
+3.0, 497.00, 13.12, 39.00, 0.0
+3.5, 516.50, 13.12, 39.00, 0.0
+4.0, 536.00, 13.12, 39.00, 0.0
+4.5, 555.50, 13.12, 39.00, 0.0
+5.0, 575.00, 13.12, 39.00, 0.0
+
+Vehicle ID: 9 (Car - Lane-changing vehicle from middle to left)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 330.00, 13.12, 40.00, 0.0
+0.5, 350.00, 13.12, 40.00, 0.0
+1.0, 370.00, 13.12, 40.00, 0.0
+1.5, 390.00, 15.30, 40.00, 0.08
+2.0, 410.00, 17.50, 40.00, 0.08
+2.5, 430.00, 19.60, 40.00, 0.08
+3.0, 450.00, 21.68, 40.00, 0.08
+3.5, 470.00, 21.68, 40.00, 0.0
+4.0, 490.00, 21.68, 40.00, 0.0
+4.5, 510.00, 21.68, 40.00, 0.0
+5.0, 530.00, 21.68, 40.00, 0.0
+
+Vehicle ID: 10 (Car - Vehicle in right lane with varying speed)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 420.00, 9.39, 37.00, 0.0
+0.5, 438.50, 9.39, 37.00, 0.0
+1.0, 457.00, 9.39, 37.00, 0.0
+1.5, 475.50, 9.39, 37.00, 0.0
+2.0, 494.00, 9.39, 37.00, 0.0
+2.5, 512.50, 9.39, 37.00, 0.0
+3.0, 531.00, 9.39, 37.00, 0.0
+3.5, 549.50, 9.39, 37.00, 0.0
+4.0, 568.00, 9.39, 37.00, 0.0
+4.5, 586.50, 9.39, 37.00, 0.0
+5.0, 605.00, 9.39, 37.00, 0.0
+</vehicle_trajectories>

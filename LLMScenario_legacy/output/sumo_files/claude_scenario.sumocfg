@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<configuration>
+  <input>
+    <net-file value="claude_scenario.net.xml"/>
+    <route-files value="claude_scenario.rou.xml"/>
+  </input>
+  <time>
+    <begin value="0"/>
+    <end value="100"/>
+  </time>
+</configuration>

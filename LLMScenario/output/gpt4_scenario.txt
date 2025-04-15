@@ -1,0 +1,76 @@
+[SCENARIO_DESCRIPTION]
+In this enhanced scenario, the highway remains a 4-lane road with the same lane dimensions and y-coordinate ranges. The speed limit is corrected to 120 km/h. The scenario introduces a construction zone in lanes 3 and 4, starting at x = 250 meters and ending at x = 300 meters, requiring vehicles to merge into lanes 1 and 2. Additionally, a sudden rainstorm begins at t = 5 seconds, reducing visibility and road friction. Vehicles must navigate these conditions while maintaining safe distances and speeds. The scenario includes a mix of vehicles with varying speeds and lane changes, creating a complex environment for autonomous systems to manage.
+
+[/SCENARIO_DESCRIPTION]
+
+[ENHANCEMENT_STRATEGY]
+The scenario is made more challenging by introducing a construction zone that forces lane changes and merges, increasing the density of vehicles in lanes 1 and 2. The sudden onset of rain adds an environmental challenge, requiring vehicles to adjust their speeds and increase following distances. The combination of these elements tests the autonomous vehicle's ability to handle dynamic lane changes, adapt to changing road conditions, and maintain safety in a high-density traffic environment.
+
+[/ENHANCEMENT_STRATEGY]
+
+[VEHICLE_TRAJECTORIES]
+Vehicle ID: 1 (Car - Fast-moving vehicle in lane 5)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 362.26, 21.68, 41.07, 0.0
+0.5, 382.80, 21.68, 41.07, 0.0
+1.0, 403.33, 21.68, 41.07, 0.0
+1.5, 423.87, 21.68, 41.07, 0.0
+2.0, 444.41, 21.68, 41.07, 0.0
+2.5, 464.95, 21.68, 41.07, 0.0
+3.0, 485.49, 21.68, 41.07, 0.0
+3.5, 506.03, 21.68, 41.07, 0.0
+4.0, 526.57, 21.68, 41.07, 0.0
+4.5, 547.11, 21.68, 41.07, 0.0
+
+Vehicle ID: 2 (Car - Slower vehicle in lane 2, merging to lane 1)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 162.75, 9.39, 20.00, 0.0
+0.5, 172.75, 9.39, 20.00, 0.0
+1.0, 182.75, 9.39, 20.00, 0.0
+1.5, 192.75, 9.39, 20.00, 0.0
+2.0, 202.75, 9.39, 20.00, 0.0
+2.5, 212.75, 9.39, 20.00, 0.0
+3.0, 222.75, 9.39, 20.00, 0.0
+3.5, 232.75, 9.39, 20.00, 0.0
+4.0, 242.75, 9.39, 20.00, 0.0
+4.5, 252.75, 8.5, 20.00, 0.0
+
+Vehicle ID: 3 (Car - Vehicle in lane 5, adjusting for rain)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 182.08, 21.64, 36.13, 0.0
+0.5, 200.15, 21.64, 36.13, 0.0
+1.0, 218.22, 21.64, 36.13, 0.0
+1.5, 236.29, 21.64, 36.13, 0.0
+2.0, 254.36, 21.64, 36.13, 0.0
+2.5, 272.43, 21.64, 36.13, 0.0
+3.0, 290.50, 21.64, 36.13, 0.0
+3.5, 308.57, 21.64, 36.13, 0.0
+4.0, 326.64, 21.64, 36.13, 0.0
+4.5, 344.71, 21.64, 36.13, 0.0
+
+Vehicle ID: 4 (Car - Vehicle in lane 3, merging to lane 2 due to construction)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 267.34, 13.12, 30.00, 0.0
+0.5, 282.34, 13.12, 30.00, 0.0
+1.0, 297.34, 13.12, 30.00, 0.0
+1.5, 312.34, 12.0, 30.00, 0.0
+2.0, 327.34, 12.0, 30.00, 0.0
+2.5, 342.34, 12.0, 30.00, 0.0
+3.0, 357.34, 12.0, 30.00, 0.0
+3.5, 372.34, 12.0, 30.00, 0.0
+4.0, 387.34, 12.0, 30.00, 0.0
+4.5, 402.34, 12.0, 30.00, 0.0
+
+Vehicle ID: 5 (Car - Vehicle in lane 3, slowing down due to rain)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 309.40, 13.81, 25.00, 0.0
+0.5, 321.90, 13.81, 25.00, 0.0
+1.0, 334.40, 13.81, 25.00, 0.0
+1.5, 346.90, 13.81, 25.00, 0.0
+2.0, 359.40, 13.81, 25.00, 0.0
+2.5, 371.90, 13.81, 25.00, 0.0
+3.0, 384.40, 13.81, 25.00, 0.0
+3.5, 396.90, 13.81, 25.00, 0.0
+4.0, 409.40, 13.81, 25.00, 0.0
+4.5, 421.90, 13.81, 25.00, 0.0
+[/VEHICLE_TRAJECTORIES]

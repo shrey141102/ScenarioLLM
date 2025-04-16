@@ -1,0 +1,174 @@
+<scenario_description>
+This enhanced scenario takes place on a busy 4-lane highway with bidirectional traffic. The scenario features a complex series of lane changes and near-miss situations that challenge an autonomous vehicle's prediction and planning capabilities. The scene involves multiple vehicles performing sequential lane changes, creating a "chain reaction" effect, with some aggressive drivers cutting in with minimal gaps. Additionally, there's a slower vehicle ahead forcing multiple cars to make evasive maneuvers. A motorcycle weaves through traffic at high speed, and a truck with limited visibility creates additional complexity. The scenario culminates with a vehicle suddenly braking due to debris on the road, forcing surrounding vehicles to react quickly.
+</scenario_description>
+
+<enhancement_strategy>
+I've enhanced the scenario by:
+1. Adding more vehicles with varying dynamics (including a motorcycle and truck)
+2. Creating cascading lane changes where one vehicle's action triggers responses from others
+3. Introducing more aggressive cut-ins with minimal safety gaps
+4. Adding a sudden braking event due to road debris
+5. Including a high-speed motorcycle weaving through traffic
+6. Creating situations with partially occluded visibility
+7. Maintaining realistic physics and vehicle capabilities while pushing the boundaries of challenging interactions
+8. Designing multiple simultaneous interactions that require an autonomous system to track and predict multiple agents
+9. Creating situations where the optimal path forward requires negotiation with other road users
+</enhancement_strategy>
+
+<vehicle_trajectories>
+Vehicle ID: 1 (Car - Ego vehicle in right lane)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 72.77, 12.49, 37.19, 3.14
+0.5, 54.18, 12.52, 37.19, 3.14
+1.0, 35.59, 12.55, 37.19, 3.14
+1.5, 17.00, 12.58, 37.19, 3.14
+2.0, -1.59, 12.61, 37.19, 3.14
+2.5, -20.18, 12.64, 37.19, 3.14
+3.0, -38.77, 12.67, 37.19, 3.14
+3.5, -57.36, 12.70, 37.19, 3.14
+4.0, -75.95, 12.73, 37.19, 3.14
+4.5, -94.54, 12.76, 37.19, 3.14
+
+Vehicle ID: 2 (Car - Fast vehicle in left lane)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 276.19, 23.74, 32.50, 0.0
+0.5, 292.44, 23.50, 32.50, -0.02
+1.0, 308.69, 23.26, 32.50, -0.02
+1.5, 324.94, 23.02, 32.50, -0.02
+2.0, 341.19, 22.78, 32.50, -0.02
+2.5, 357.44, 22.54, 32.50, -0.02
+3.0, 373.69, 22.30, 32.50, -0.02
+3.5, 389.94, 22.06, 32.50, -0.02
+4.0, 406.19, 21.82, 32.50, -0.02
+4.5, 422.44, 21.58, 32.50, -0.02
+
+Vehicle ID: 3 (Car - Vehicle in far left lane)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 287.30, 26.30, 28.53, 0.0
+0.5, 301.57, 26.20, 28.53, -0.01
+1.0, 315.83, 26.10, 28.53, -0.01
+1.5, 330.10, 26.00, 28.53, -0.01
+2.0, 344.36, 25.90, 28.53, -0.01
+2.5, 358.63, 25.80, 28.53, -0.01
+3.0, 372.89, 25.70, 28.53, -0.01
+3.5, 387.16, 25.60, 28.53, -0.01
+4.0, 401.42, 25.50, 28.53, -0.01
+4.5, 415.69, 25.40, 28.53, -0.01
+
+Vehicle ID: 4 (Car - Fast vehicle in right lane)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 189.14, 13.65, 39.35, 3.14
+0.5, 169.47, 13.62, 39.35, 3.14
+1.0, 149.79, 13.59, 39.35, 3.14
+1.5, 130.12, 13.56, 39.35, 3.14
+2.0, 110.44, 13.53, 39.35, 3.14
+2.5, 90.77, 13.50, 39.35, 3.14
+3.0, 71.09, 13.47, 39.35, 3.14
+3.5, 51.42, 13.44, 39.35, 3.14
+4.0, 31.74, 13.41, 39.35, 3.14
+4.5, 12.07, 13.38, 39.35, 3.14
+
+Vehicle ID: 5 (Car - Vehicle in right lane)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 219.05, 12.84, 38.70, 3.14
+0.5, 199.70, 12.85, 38.70, 3.14
+1.0, 180.35, 12.86, 38.70, 3.14
+1.5, 161.00, 12.87, 38.70, 3.14
+2.0, 141.65, 12.88, 38.70, 3.14
+2.5, 122.30, 12.89, 38.70, 3.14
+3.0, 102.95, 12.90, 38.70, 3.14
+3.5, 83.60, 12.91, 38.70, 3.14
+4.0, 64.25, 12.92, 38.70, 3.14
+4.5, 44.90, 12.93, 38.70, 3.14
+
+Vehicle ID: 6 (Car - Aggressive lane changer)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 300.0, 23.74, 34.0, 0.0
+0.5, 317.0, 23.74, 34.0, 0.0
+1.0, 334.0, 23.74, 34.0, 0.0
+1.5, 351.0, 23.74, 34.0, 0.0
+2.0, 368.0, 24.50, 34.0, 0.15
+2.5, 385.0, 25.80, 34.0, 0.10
+3.0, 402.0, 26.30, 34.0, 0.0
+3.5, 419.0, 26.30, 34.0, 0.0
+4.0, 436.0, 26.30, 34.0, 0.0
+4.5, 453.0, 26.30, 34.0, 0.0
+
+Vehicle ID: 7 (Car - Slow vehicle causing disruption)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 350.0, 13.65, 25.0, 3.14
+0.5, 337.5, 13.65, 25.0, 3.14
+1.0, 325.0, 13.65, 25.0, 3.14
+1.5, 312.5, 13.65, 25.0, 3.14
+2.0, 300.0, 13.65, 25.0, 3.14
+2.5, 287.5, 13.65, 25.0, 3.14
+3.0, 275.0, 13.65, 25.0, 3.14
+3.5, 262.5, 13.65, 25.0, 3.14
+4.0, 250.0, 13.65, 25.0, 3.14
+4.5, 237.5, 13.65, 25.0, 3.14
+
+Vehicle ID: 8 (Car - Sudden braking vehicle)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 150.0, 16.20, 30.0, 0.0
+0.5, 165.0, 16.20, 30.0, 0.0
+1.0, 180.0, 16.20, 30.0, 0.0
+1.5, 195.0, 16.20, 30.0, 0.0
+2.0, 210.0, 16.20, 30.0, 0.0
+2.5, 222.5, 16.20, 25.0, 0.0
+3.0, 232.5, 16.20, 20.0, 0.0
+3.5, 240.0, 16.20, 15.0, 0.0
+4.0, 247.5, 16.20, 15.0, 0.0
+4.5, 255.0, 16.20, 15.0, 0.0
+
+Vehicle ID: 9 (Motorcycle - Weaving through traffic)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 200.0, 13.65, 45.0, 0.0
+0.5, 222.5, 13.65, 45.0, 0.0
+1.0, 245.0, 14.50, 45.0, 0.15
+1.5, 267.5, 16.20, 45.0, 0.10
+2.0, 290.0, 16.20, 45.0, 0.0
+2.5, 312.5, 15.00, 45.0, -0.15
+3.0, 335.0, 13.65, 45.0, -0.10
+3.5, 357.5, 13.65, 45.0, 0.0
+4.0, 380.0, 13.65, 45.0, 0.0
+4.5, 402.5, 13.65, 45.0, 0.0
+
+Vehicle ID: 10 (Truck - Large vehicle with limited visibility)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 250.0, 16.20, 27.0, 0.0
+0.5, 263.5, 16.20, 27.0, 0.0
+1.0, 277.0, 16.20, 27.0, 0.0
+1.5, 290.5, 16.20, 27.0, 0.0
+2.0, 304.0, 16.20, 27.0, 0.0
+2.5, 317.5, 16.20, 27.0, 0.0
+3.0, 331.0, 16.20, 27.0, 0.0
+3.5, 344.5, 16.20, 27.0, 0.0
+4.0, 358.0, 16.20, 27.0, 0.0
+4.5, 371.5, 16.20, 27.0, 0.0
+
+Vehicle ID: 11 (Car - Reactive lane changer)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 120.0, 13.65, 35.0, 0.0
+0.5, 137.5, 13.65, 35.0, 0.0
+1.0, 155.0, 13.65, 35.0, 0.0
+1.5, 172.5, 13.65, 35.0, 0.0
+2.0, 190.0, 14.50, 35.0, 0.15
+2.5, 207.5, 16.20, 35.0, 0.10
+3.0, 225.0, 16.20, 35.0, 0.0
+3.5, 242.5, 16.20, 35.0, 0.0
+4.0, 260.0, 16.20, 35.0, 0.0
+4.5, 277.5, 16.20, 35.0, 0.0
+
+Vehicle ID: 12 (Car - Cut-in vehicle)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 100.0, 16.20, 38.0, 0.0
+0.5, 119.0, 16.20, 38.0, 0.0
+1.0, 138.0, 16.20, 38.0, 0.0
+1.5, 157.0, 16.20, 38.0, 0.0
+2.0, 176.0, 15.00, 38.0, -0.15
+2.5, 195.0, 13.65, 38.0, -0.10
+3.0, 214.0, 13.65, 38.0, 0.0
+3.5, 233.0, 13.65, 38.0, 0.0
+4.0, 252.0, 13.65, 38.0, 0.0
+4.5, 271.0, 13.65, 38.0, 0.0
+</vehicle_trajectories>

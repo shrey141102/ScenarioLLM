@@ -1,0 +1,145 @@
+[SCENARIO_DESCRIPTION]
+This scenario takes place on a 4-lane highway. The ego vehicle (Vehicle 10) is attempting to merge from an on-ramp (represented by lane 2) onto the main highway (lanes 3, 5, and 6). Traffic is moderately heavy. Vehicle 1 is traveling at a high speed in lane 5, approaching from behind. Vehicle 2 is traveling at a moderate speed in lane 3. Vehicle 3 is in lane 6, initially ahead of the ego vehicle but slowing down due to a phantom traffic jam ahead. Vehicle 4 is in lane 3, initially behind the ego vehicle, and accelerates to prevent the ego vehicle from merging. Vehicle 5 is in lane 5, performing a lane change to lane 6. Vehicle 6 is in lane 6, performing a lane change to lane 5. Vehicle 7 is in lane 3, slowing down. Vehicle 8 is in lane 5, maintaining speed. Vehicle 9 is in lane 6, accelerating. The ego vehicle must successfully merge onto the highway while avoiding collisions and maintaining a safe following distance. The speed limit is effectively ignored due to the traffic conditions.
+[/SCENARIO_DESCRIPTION]
+
+[ENHANCEMENT_STRATEGY]
+The scenario is made more challenging by:
+
+1.  **Adding an on-ramp merge:** This forces the ego vehicle to make a critical decision and execute a complex maneuver.
+2.  **Increasing traffic density:** More vehicles increase the likelihood of conflicts and require more careful planning.
+3.  **Introducing lane changes:** Vehicles changing lanes create unpredictable situations and require the ego vehicle to anticipate their movements.
+4.  **Adding a phantom traffic jam:** This forces vehicles to slow down unexpectedly, creating a dynamic and potentially dangerous situation.
+5.  **Conflicting behaviors:** Vehicle 4 actively prevents the ego vehicle from merging, requiring a more assertive and strategic merging maneuver.
+[/ENHANCEMENT_STRATEGY]
+
+[VEHICLE_TRAJECTORIES]
+Vehicle ID: 1 (Car - Approaching fast in lane 5)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 362.26, 23.74, 41.07, 0.0
+0.5, 382.80, 23.74, 41.07, 0.0
+1.0, 403.33, 23.74, 41.07, 0.0
+1.5, 423.87, 23.74, 41.07, 0.0
+2.0, 444.40, 23.74, 41.07, 0.0
+2.5, 464.94, 23.74, 41.07, 0.0
+3.0, 485.47, 23.74, 41.07, 0.0
+3.5, 506.01, 23.74, 41.07, 0.0
+4.0, 526.54, 23.74, 41.07, 0.0
+4.5, 547.08, 23.74, 41.07, 0.0
+
+Vehicle ID: 2 (Car - Traveling in lane 3)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 162.75, 12.49, 25.0, 0.0
+0.5, 175.25, 12.49, 25.0, 0.0
+1.0, 187.75, 12.49, 25.0, 0.0
+1.5, 200.25, 12.49, 25.0, 0.0
+2.0, 212.75, 12.49, 25.0, 0.0
+2.5, 225.25, 12.49, 25.0, 0.0
+3.0, 237.75, 12.49, 25.0, 0.0
+3.5, 250.25, 12.49, 25.0, 0.0
+4.0, 262.75, 12.49, 25.0, 0.0
+4.5, 275.25, 12.49, 25.0, 0.0
+
+Vehicle ID: 3 (Car - Slowing down in lane 6)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 287.30, 26.30, 28.53, 0.0
+0.5, 301.57, 26.30, 28.53, 0.0
+1.0, 315.84, 26.30, 28.53, 0.0
+1.5, 328.00, 26.30, 24.00, 0.0
+2.0, 340.00, 26.30, 24.00, 0.0
+2.5, 352.00, 26.30, 24.00, 0.0
+3.0, 364.00, 26.30, 24.00, 0.0
+3.5, 376.00, 26.30, 24.00, 0.0
+4.0, 388.00, 26.30, 24.00, 0.0
+4.5, 400.00, 26.30, 24.00, 0.0
+
+Vehicle ID: 4 (Car - Accelerating in lane 3 to block merge)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 140.00, 12.49, 26.0, 0.0
+0.5, 154.00, 12.49, 28.0, 0.0
+1.0, 169.00, 12.49, 30.0, 0.0
+1.5, 185.00, 12.49, 32.0, 0.0
+2.0, 202.00, 12.49, 34.0, 0.0
+2.5, 220.00, 12.49, 36.0, 0.0
+3.0, 239.00, 12.49, 38.0, 0.0
+3.5, 259.00, 12.49, 40.0, 0.0
+4.0, 280.00, 12.49, 42.0, 0.0
+4.5, 302.00, 12.49, 44.0, 0.0
+
+Vehicle ID: 5 (Car - Lane change from 5 to 6)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 219.05, 23.74, 30.0, 0.0
+0.5, 234.05, 23.74, 30.0, 0.0
+1.0, 249.05, 23.74, 30.0, 0.0
+1.5, 264.05, 24.5, 30.0, 0.1
+2.0, 279.05, 25.3, 30.0, 0.0
+2.5, 294.05, 26.30, 30.0, 0.0
+3.0, 309.05, 26.30, 30.0, 0.0
+3.5, 324.05, 26.30, 30.0, 0.0
+4.0, 339.05, 26.30, 30.0, 0.0
+4.5, 354.05, 26.30, 30.0, 0.0
+
+Vehicle ID: 6 (Car - Lane change from 6 to 5)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 200.00, 26.30, 27.0, 0.0
+0.5, 213.50, 26.30, 27.0, 0.0
+1.0, 227.00, 26.30, 27.0, 0.0
+1.5, 240.50, 25.5, 27.0, -0.1
+2.0, 254.00, 24.7, 27.0, 0.0
+2.5, 267.50, 23.74, 27.0, 0.0
+3.0, 281.00, 23.74, 27.0, 0.0
+3.5, 294.50, 23.74, 27.0, 0.0
+4.0, 308.00, 23.74, 27.0, 0.0
+4.5, 321.50, 23.74, 27.0, 0.0
+
+Vehicle ID: 7 (Car - Slowing down in lane 3)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 300.00, 12.49, 32.0, 0.0
+0.5, 316.00, 12.49, 32.0, 0.0
+1.0, 332.00, 12.49, 32.0, 0.0
+1.5, 346.00, 12.49, 28.0, 0.0
+2.0, 360.00, 12.49, 28.0, 0.0
+2.5, 374.00, 12.49, 28.0, 0.0
+3.0, 388.00, 12.49, 28.0, 0.0
+3.5, 402.00, 12.49, 28.0, 0.0
+4.0, 416.00, 12.49, 28.0, 0.0
+4.5, 430.00, 12.49, 28.0, 0.0
+
+Vehicle ID: 8 (Car - Maintaining speed in lane 5)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 100.00, 23.74, 31.0, 0.0
+0.5, 115.50, 23.74, 31.0, 0.0
+1.0, 131.00, 23.74, 31.0, 0.0
+1.5, 146.50, 23.74, 31.0, 0.0
+2.0, 162.00, 23.74, 31.0, 0.0
+2.5, 177.50, 23.74, 31.0, 0.0
+3.0, 193.00, 23.74, 31.0, 0.0
+3.5, 208.50, 23.74, 31.0, 0.0
+4.0, 224.00, 23.74, 31.0, 0.0
+4.5, 239.50, 23.74, 31.0, 0.0
+
+Vehicle ID: 9 (Car - Accelerating in lane 6)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 150.00, 26.30, 25.0, 0.0
+0.5, 163.00, 26.30, 26.0, 0.0
+1.0, 176.50, 26.30, 27.0, 0.0
+1.5, 190.50, 26.30, 28.0, 0.0
+2.0, 205.00, 26.30, 29.0, 0.0
+2.5, 220.00, 26.30, 30.0, 0.0
+3.0, 235.50, 26.30, 31.0, 0.0
+3.5, 251.50, 26.30, 32.0, 0.0
+4.0, 268.00, 26.30, 33.0, 0.0
+4.5, 285.00, 26.30, 34.0, 0.0
+
+Vehicle ID: 10 (Car - Ego vehicle merging from on-ramp)
+Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
+0.0, 50.00, 8.00, 15.0, 0.3
+0.5, 57.50, 8.30, 15.5, 0.2
+1.0, 65.25, 8.70, 16.0, 0.1
+1.5, 73.25, 9.20, 16.5, 0.05
+2.0, 81.50, 9.80, 17.0, 0.0
+2.5, 90.00, 10.50, 17.5, 0.0
+3.0, 98.75, 11.30, 18.0, 0.0
+3.5, 107.75, 12.20, 18.5, 0.0
+4.0, 117.00, 13.20, 19.0, 0.0
+4.5, 126.50, 14.30, 19.5, 0.0
+[/VEHICLE_TRAJECTORIES]

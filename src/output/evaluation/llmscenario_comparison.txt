@@ -1,0 +1,58 @@
+# Comparison with LLMScenario Paper Metrics
+
+## Original LLMScenario Metrics
+
+The original LLMScenario paper used two primary metrics:
+
+1. **Reality Score**: Evaluates if scenarios are realistic, checking for:
+   - Vehicle collisions
+   - Disobedience of traffic rules
+   - Violation of vehicle dynamics constraints
+   - Vehicles out of drivable area
+
+2. **Rarity Score**: Measures how different generated scenarios are from:
+   - Original prompt scenario
+   - Normal safe scenarios
+   - Previously generated scenarios
+
+## Our Comparable Metrics
+
+We've implemented similar metrics:
+
+1. **Reality Score**: Evaluates physical realism by checking:
+   - Realistic acceleration/deceleration
+   - Absence of vehicle collisions
+   - Proper trajectory continuity
+
+2. **Rarity Score**: Evaluates complexity and uniqueness through:
+   - Number of interactions
+   - Lane change frequency
+   - Overall scenario complexity
+
+## Results Comparison
+
+| Model | Reality Score | Rarity Score | Combined Score | Collisions |
+|-------|--------------|--------------|----------------|------------|
+| gpt4 | 1.00 | 0.44 | 1.44 | 0 |
+| claude | 1.00 | 0.59 | 1.59 | 0 |
+| gemini | 0.50 | 0.86 | 1.36 | 1 |
+
+## Key Differences
+
+Our metrics differ from the original paper in the following ways:
+
+1. **Reality checking approach**: While the original paper uses a more comprehensive approach
+   with traffic rule checking, our implementation focuses on physical dynamics and collisions.
+
+2. **Rarity calculation**: The original paper uses a distance metric between scenario graphs,
+   while our approach uses complexity as a proxy for rarity.
+
+3. **Score combination**: The original uses a weighted linear combination of scores with thresholds,
+   while our approach adds reality and rarity scores directly (when reality > 0).
+
+## Conclusion
+
+Our evaluation system captures the same core principles as the LLMScenario paper:
+balancing realism with challenge/rarity. Given the implementation differences,
+the absolute values are not directly comparable, but the relative rankings
+between models should provide similar insights.

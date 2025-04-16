@@ -766,3 +766,4 @@ class MatplotlibVisualizer:
 
         print(f"Static visualization saved to {output_path}")
         return output_path
+

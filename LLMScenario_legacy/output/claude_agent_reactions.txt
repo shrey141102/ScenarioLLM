@@ -7,29 +7,29 @@ Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
 0.0, 200, 0, 20, 0
 0.2, 204, 0, 20, 0
 0.4, 208, 0, 20, 0
-0.6, 212, 0, 20, 0
-0.8, 216, 0, 20, 0
-1.0, 220, 0, 20, 0
-1.2, 223, 0, 15, 0
-1.4, 226, 0, 10, 0
-1.6, 228, 0, 10, 0
-1.8, 230, 0, 10, 0
-2.0, 232, 0, 10, 0
-2.2, 234, 0, 10, 0
-2.4, 236, 0, 10, 0
-2.6, 238, 0, 10, 0
-2.8, 240, 0, 10, 0
-3.0, 242, 0, 10, 0
-3.2, 244, 0, 10, 0
-3.4, 246, 0, 10, 0
-3.6, 248, 0, 10, 0
-3.8, 250, 0, 10, 0
-4.0, 252, 0, 10, 0
-4.2, 254, 0, 10, 0
-4.4, 256, 0, 10, 0
-4.6, 258, 0, 10, 0
-4.8, 260, 0, 10, 0
-5.0, 262, 0, 10, 0
+0.6, 211.5, 0, 17.5, 0
+0.8, 214.5, 0, 15, 0
+1.0, 217, 0, 12.5, 0
+1.2, 219, 0, 12.5, 0
+1.4, 221, 0, 12.5, 0
+1.6, 223, 0, 15, 0
+1.8, 226, 0, 17.5, 0
+2.0, 230, 0, 20, 0
+2.2, 234, 0, 20, 0
+2.4, 238, 0, 20, 0
+2.6, 242, 0, 20, 0
+2.8, 246, 0, 20, 0
+3.0, 250, 0, 20, 0
+3.2, 254, 0, 20, 0
+3.4, 258, 0, 20, 0
+3.6, 262, 0, 20, 0
+3.8, 266, 0, 20, 0
+4.0, 270, 0, 20, 0
+4.2, 274, 0, 20, 0
+4.4, 278, 0, 20, 0
+4.6, 282, 0, 20, 0
+4.8, 286, 0, 20, 0
+5.0, 290, 0, 20, 0
 ```
-In this scenario, I initially maintain my speed of 20 m/s, but as the vehicle ahead suddenly brakes, I begin to decelerate to ensure safety. I reduce my speed to 15 m/s by 1.2 seconds and further to 10 m/s by 1.4 seconds, maintaining this speed to keep a safe distance while monitoring the traffic situation. My trajectory reflects a cautious approach, prioritizing safety and maintaining control of the vehicle.
+This trajectory reflects a cautious reduction in speed to maintain safety, followed by a return to the original speed once the situation is assessed as stable.
 

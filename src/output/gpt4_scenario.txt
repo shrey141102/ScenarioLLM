@@ -1,74 +1,81 @@
 [SCENARIO_DESCRIPTION]
-In this enhanced scenario, the highway remains a 4-lane road with lanes identified as 2, 3, 5, and 6. The speed limit is set to a realistic 120 km/h. The scenario introduces a construction zone in lane 3, starting at position (150, 12.5) and ending at (250, 12.5), requiring vehicles to merge into adjacent lanes. Additionally, a sudden rainstorm reduces visibility and road friction, challenging the vehicles' sensors and control systems. Vehicles must navigate through the construction zone while maintaining safe distances and adapting to the reduced traction. The scenario includes a mix of vehicles with varying speeds and lane changes, creating complex interactions and requiring advanced decision-making from autonomous systems.
+In this enhanced scenario, the highway remains a 4-lane road with a speed limit of 100 km/h. The traffic density is increased, and the vehicles exhibit more complex interactions, including simultaneous lane changes and speed variations. The scenario introduces a construction zone in lane 3, requiring vehicles to merge into adjacent lanes. Additionally, a sudden weather change introduces heavy rain, reducing visibility and road friction, challenging the autonomous vehicles' perception and control systems. Vehicles must navigate these conditions while maintaining safe distances and speeds.
+
 [/SCENARIO_DESCRIPTION]
 
 [ENHANCEMENT_STRATEGY]
-To increase the complexity, the scenario introduces a construction zone that forces lane changes, combined with adverse weather conditions that affect vehicle dynamics. The presence of multiple vehicles with different speeds and trajectories increases the likelihood of interactions, requiring the autonomous system to handle simultaneous lane changes and speed adjustments. The reduced visibility and traction due to rain add an additional layer of difficulty, testing the vehicle's sensor fusion and control algorithms.
+To make the scenario more challenging, the following strategies are employed:
+1. Increased Traffic Density: More vehicles are introduced, increasing the complexity of interactions.
+2. Construction Zone: A section of lane 3 is closed, requiring vehicles to merge into lanes 2 or 4.
+3. Weather Conditions: Heavy rain reduces visibility and road friction, testing the vehicles' adaptive capabilities.
+4. Simultaneous Lane Changes: Multiple vehicles perform lane changes at the same time, increasing the risk of collisions.
+5. Speed Variations: Vehicles adjust speeds dynamically in response to traffic and weather conditions, requiring precise control.
+
 [/ENHANCEMENT_STRATEGY]
 
 [VEHICLE_TRAJECTORIES]
-Vehicle ID: 1 (Car - Leading vehicle approaching construction zone)
+Vehicle ID: 1 (Car - Leading vehicle in lane 5)
 Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
-0.0, 100.00, 12.50, 33.33, 0.0
-0.5, 116.67, 12.50, 33.33, 0.0
-1.0, 133.33, 12.50, 33.33, 0.0
-1.5, 150.00, 12.50, 33.33, 0.0
-2.0, 166.67, 12.50, 33.33, 0.0
-2.5, 183.33, 12.50, 33.33, 0.0
-3.0, 200.00, 12.50, 33.33, 0.0
-3.5, 216.67, 12.50, 33.33, 0.0
-4.0, 233.33, 12.50, 33.33, 0.0
-4.5, 250.00, 12.50, 33.33, 0.0
+0.0, 362.26, 21.68, 41.07, 0.0
+0.5, 382.80, 21.68, 41.07, 0.0
+1.0, 403.33, 21.68, 41.07, 0.0
+1.5, 423.87, 21.68, 41.07, 0.0
+2.0, 444.41, 21.68, 41.07, 0.0
+2.5, 464.95, 21.68, 41.07, 0.0
+3.0, 485.49, 21.68, 41.07, 0.0
+3.5, 506.03, 21.68, 41.07, 0.0
+4.0, 526.57, 21.68, 41.07, 0.0
+4.5, 547.11, 21.68, 41.07, 0.0
 
-Vehicle ID: 2 (Car - Following vehicle, needs to change lanes)
+Vehicle ID: 2 (Car - Approaching construction zone in lane 3)
 Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
-0.0, 90.00, 12.50, 30.00, 0.0
-0.5, 105.00, 12.50, 30.00, 0.0
-1.0, 120.00, 12.50, 30.00, 0.0
-1.5, 135.00, 12.50, 30.00, 0.0
-2.0, 150.00, 12.50, 30.00, 0.0
-2.5, 165.00, 12.50, 30.00, 0.0
-3.0, 180.00, 12.50, 30.00, 0.0
-3.5, 195.00, 12.50, 30.00, 0.0
-4.0, 210.00, 12.50, 30.00, 0.0
-4.5, 225.00, 12.50, 30.00, 0.0
+0.0, 162.75, 9.39, -32.48, 3.14
+0.5, 146.51, 9.39, -32.48, 3.14
+1.0, 130.27, 9.39, -32.48, 3.14
+1.5, 114.03, 9.39, -32.48, 3.14
+2.0, 97.79, 9.39, -32.48, 3.14
+2.5, 81.55, 9.39, -32.48, 3.14
+3.0, 65.31, 9.39, -32.48, 3.14
+3.5, 49.07, 9.39, -32.48, 3.14
+4.0, 32.83, 9.39, -32.48, 3.14
+4.5, 16.59, 9.39, -32.48, 3.14
 
-Vehicle ID: 3 (Car - Vehicle in adjacent lane, maintaining speed)
+Vehicle ID: 3 (Car - Merging from lane 3 to lane 2)
 Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
-0.0, 110.00, 21.66, 28.00, 0.0
-0.5, 124.00, 21.66, 28.00, 0.0
-1.0, 138.00, 21.66, 28.00, 0.0
-1.5, 152.00, 21.66, 28.00, 0.0
-2.0, 166.00, 21.66, 28.00, 0.0
-2.5, 180.00, 21.66, 28.00, 0.0
-3.0, 194.00, 21.66, 28.00, 0.0
-3.5, 208.00, 21.66, 28.00, 0.0
-4.0, 222.00, 21.66, 28.00, 0.0
-4.5, 236.00, 21.66, 28.00, 0.0
+0.0, 287.30, 26.30, 28.53, 0.0
+0.5, 301.57, 25.80, 28.53, -0.1
+1.0, 315.84, 25.30, 28.53, -0.2
+1.5, 330.11, 24.80, 28.53, -0.3
+2.0, 344.38, 24.30, 28.53, -0.4
+2.5, 358.65, 23.80, 28.53, -0.5
+3.0, 372.92, 23.30, 28.53, -0.6
+3.5, 387.19, 22.80, 28.53, -0.7
+4.0, 401.46, 22.30, 28.53, -0.8
+4.5, 415.73, 21.80, 28.53, -0.9
 
-Vehicle ID: 4 (Car - Vehicle in lane 5, adjusting speed due to rain)
+Vehicle ID: 4 (Car - Slowing down due to rain in lane 6)
 Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
-0.0, 130.00, 25.66, 25.00, 0.0
-0.5, 142.50, 25.66, 25.00, 0.0
-1.0, 155.00, 25.66, 25.00, 0.0
-1.5, 167.50, 25.66, 25.00, 0.0
-2.0, 180.00, 25.66, 25.00, 0.0
-2.5, 192.50, 25.66, 25.00, 0.0
-3.0, 205.00, 25.66, 25.00, 0.0
-3.5, 217.50, 25.66, 25.00, 0.0
-4.0, 230.00, 25.66, 25.00, 0.0
-4.5, 242.50, 25.66, 25.00, 0.0
+0.0, 189.14, 13.65, -39.35, 3.14
+0.5, 169.47, 13.65, -35.00, 3.14
+1.0, 149.80, 13.65, -30.00, 3.14
+1.5, 130.13, 13.65, -25.00, 3.14
+2.0, 110.46, 13.65, -20.00, 3.14
+2.5, 90.79, 13.65, -15.00, 3.14
+3.0, 71.12, 13.65, -10.00, 3.14
+3.5, 51.45, 13.65, -5.00, 3.14
+4.0, 31.78, 13.65, 0.00, 3.14
+4.5, 12.11, 13.65, 0.00, 3.14
 
-Vehicle ID: 5 (Car - Vehicle in lane 6, maintaining high speed)
+Vehicle ID: 5 (Car - Exiting highway from lane 2)
 Time (s), X (m), Y (m), Velocity (m/s), Heading (rad)
-0.0, 150.00, 28.66, 35.00, 0.0
-0.5, 167.50, 28.66, 35.00, 0.0
-1.0, 185.00, 28.66, 35.00, 0.0
-1.5, 202.50, 28.66, 35.00, 0.0
-2.0, 220.00, 28.66, 35.00, 0.0
-2.5, 237.50, 28.66, 35.00, 0.0
-3.0, 255.00, 28.66, 35.00, 0.0
-3.5, 272.50, 28.66, 35.00, 0.0
-4.0, 290.00, 28.66, 35.00, 0.0
-4.5, 307.50, 28.66, 35.00, 0.0
+0.0, 219.05, 12.84, -38.70, 3.14
+0.5, 199.70, 12.84, -38.70, 3.14
+1.0, 180.35, 12.84, -38.70, 3.14
+1.5, 161.00, 12.84, -38.70, 3.14
+2.0, 141.65, 12.84, -38.70, 3.14
+2.5, 122.30, 12.84, -38.70, 3.14
+3.0, 102.95, 12.84, -38.70, 3.14
+3.5, 83.60, 12.84, -38.70, 3.14
+4.0, 64.25, 12.84, -38.70, 3.14
+4.5, 44.90, 12.84, -38.70, 3.14
 [/VEHICLE_TRAJECTORIES]

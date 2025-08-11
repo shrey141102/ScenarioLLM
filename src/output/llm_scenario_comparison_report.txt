@@ -7,8 +7,8 @@ LLM Scenario Generation Comparative Report
      * Cars: 5
      * Trucks: 0
    - claude:
-     * Total Vehicles: 13
-     * Cars: 10
+     * Total Vehicles: 12
+     * Cars: 9
      * Trucks: 3
    - gemini:
      * Total Vehicles: 10
@@ -16,16 +16,16 @@ LLM Scenario Generation Comparative Report
      * Trucks: 0
 
 2. Interaction Complexity:
-   - gpt4: Complexity Score = 8
-   - claude: Complexity Score = 10
+   - gpt4: Complexity Score = 10
+   - claude: Complexity Score = 14
    - gemini: Complexity Score = 14
 
 3. Challenge Types:
    - gpt4: geometric, environmental
    - claude: No specific challenges identified
-   - gemini: behavioral, geometric
+   - gemini: behavioral, geometric, environmental
 
 4. Comparative Insights:
    - Most comprehensive vehicle representation: claude
-   - Highest interaction complexity: gemini
-   - Most diverse challenge types: gpt4, gemini
+   - Highest interaction complexity: claude, gemini
+   - Most diverse challenge types: gemini
